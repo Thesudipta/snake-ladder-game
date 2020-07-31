@@ -1,0 +1,117 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  text-align: center;
+}
+#boardContainer {
+  display: inline-block;
+  padding: 30px;
+  margin: auto;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(158, 152, 158, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(158, 152, 158, 1);
+  box-shadow: 10px 10px 5px 0px rgba(158, 152, 158, 1);
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+  height: 6vw;
+  width: 6vw;
+  max-height: 60px;
+  max-width: 60px;
+  border: 1px solid #000;
+  vertical-align: top;
+}
+.player {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+.one {
+  background: #996666;
+}
+.two {
+  background: #006666;
+}
+.snake {
+  background: #ff0033;
+}
+.ladder {
+  background: #33cc33;
+}
+.little-text {
+  color: #fff;
+  font-size: 12px;
+}
+.players-holder {
+  max-width: 800px;
+  margin: 20px auto;
+}
+.player-section {
+  display: inline-block;
+  width: 30%;
+}
+
+@media only screen and (max-width: 720px) {
+  .player-section {
+    display: block;
+    width: 100%;
+  }
+}
+
+.button-holder {
+  display: inline-block;
+}
+
+.btn {
+  border-radius: 20px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px;
+  width: 100px;
+  margin: 10px;
+  box-shadow: 1px 1px 10px 0px #000000;
+  border: solid #337fed 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.play-btn {
+  background: #3d94f6;
+  color: #ffffff;
+  background-image: linear-gradient(to bottom, #3d94f6, #1e62d0);
+}
+.play-btn:hover {
+  border: solid #337fed 1px;
+  background: #1e62d0;
+  background-image: linear-gradient(to bottom, #1e62d0, #3d94f6);
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.play-btn:disabled {
+  background: #dddddd;
+  color: #000000;
+  cursor: not-allowed;
+}
+
+.reset-btn {
+  color: #000000;
+}
+
+@media only screen and (max-width: 900px) {
+  .little-text {
+    display: none;
+  }
+}
